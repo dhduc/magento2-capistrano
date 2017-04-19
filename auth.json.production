@@ -1,0 +1,8 @@
+{
+    "github-oauth": {},
+    "http-basic": {
+        "repo.magento.com": {
+            "username": "MAGENTO_USERNAME",
+            "password": "MAGENTO_PASSWORD"
+        }}
+}

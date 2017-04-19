@@ -25,5 +25,7 @@ gem install capistrano-magento2
 
 ```auth.json```
 
+```pub/.htaccess```
+
 ```app/etc/env.php```
 

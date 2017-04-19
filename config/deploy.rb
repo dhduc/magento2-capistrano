@@ -81,6 +81,6 @@ end
 
 before 'deploy:check:linked_files', 'config:push'
 after 'magento:setup:static-content:deploy', 'magento2:add_adminer'
-before 'magento:deploy:verify', 'magento2:copy_config'
+# before 'magento:deploy:verify', 'magento2:copy_config'
 before "deploy:updated", "deploy:set_permissions:acl"
 before 'magento:setup:permissions', 'magento2:copy_htaccess'
