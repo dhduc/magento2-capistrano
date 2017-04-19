@@ -21,11 +21,11 @@ gem install capistrano-magento2
 
 ```config/deploy/production```: server, user
 
-```config/deploy```: user, group, MAGENTO_USERNAME, MAGENTO_PASSWORD
+```config/deploy```: user, MAGENTO_USERNAME, MAGENTO_PASSWORD
 
-```auth.json```
+```auth.json```: MAGENTO_USERNAME, MAGENTO_PASSWORD
 
 ```pub/.htaccess```
 
-```app/etc/env.php```
+```app/etc/env.php```: MYSQL
 

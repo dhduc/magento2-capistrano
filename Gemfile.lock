@@ -26,8 +26,6 @@ GEM
       net-ssh (>= 2.6.5)
     net-ssh (4.1.0)
     rake (12.0.0)
-    slackistrano (3.1.0)
-      capistrano (>= 3.5.0)
     sshkit (1.13.0)
       net-scp (>= 1.1.2)
       net-ssh (>= 2.8.0)
@@ -41,7 +39,6 @@ DEPENDENCIES
   capistrano-file-permissions
   capistrano-magento2!
   capistrano-upload-config
-  slackistrano
 
 BUNDLED WITH
    1.13.6

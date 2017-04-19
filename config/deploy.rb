@@ -64,7 +64,7 @@ set :magento_deploy_chmod_x, ['bin/magento']
 set :file_permissions_roles, :all
 set :file_permissions_paths, ["pub/static", "var"]
 set :file_permissions_users, ["user"]
-set :file_permissions_groups, ["group"]
+set :file_permissions_groups, ["www-data"]
 set :file_permissions_chmod_mode, "0777"
 
 # set :config_files, %w{app/etc/env.php pub/.htaccess auth.json}
@@ -81,6 +81,6 @@ end
 
 before 'deploy:check:linked_files', 'config:push'
 after 'magento:setup:static-content:deploy', 'magento2:add_adminer'
-# before 'magento:deploy:verify', 'magento2:copy_config'
+before 'magento:deploy:verify', 'magento2:copy_config'
 before "deploy:updated", "deploy:set_permissions:acl"
 before 'magento:setup:permissions', 'magento2:copy_htaccess'

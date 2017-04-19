@@ -62,7 +62,7 @@ return array (
     ),
   ),
   'x-frame-options' => 'SAMEORIGIN',
-  'MAGE_MODE' => 'developer',
+  'MAGE_MODE' => 'production',
   'cache_types' => 
   array (
     'config' => 1,
